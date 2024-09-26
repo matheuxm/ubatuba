@@ -1,0 +1,116 @@
+* {
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(71, 163, 206);
+    padding: 20px 0;
+    transition: backgroud-color 0.3s ease;
+}
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(67, 173, 180);
+}
+section:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home {
+     /*background-color: #4A90E2;*/
+    background-image: url(https://www.airconcierge.com.br/media/61168e0d0a63e77889c6ff4f/md);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5em;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+.content .text p {
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+}
+#services {
+    background-color: rgb(86, 179, 233);
+}
+#about {
+    background-color: rgb(90, 116, 231);
+}
+#contact {
+    background-color: rgb(255, 253, 253);
+}
+.cta-button {
+    margin-top: 30px;
+    background-color: rgb(37, 156, 97);
+}
+.cta-button {
+    margin-top: 30px;
+    background-color: rgb(86, 179, 233);
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.723);
+    transition: background-color 1s ease, transform 1s ease;
+}
+.cta-button:hover {
+    background-color: rgb(71, 223, 134);
+}
+
